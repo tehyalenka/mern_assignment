@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function sortAlphabetically() {
+        const inputElement = document.getElementById("no");
+        const originalString = inputElement.value;
+        const sortedString = sortStringAlphabetically(originalString);
+        document.write(sortedString);
+    }
+
+    function sortStringAlphabetically(str) {
+        return str.split('').sort().join('');
+    }
+</script>
+<body>
+    Enter string:
+    <input type="text" id="no">
+    <button onclick="sortAlphabetically()">Sort Alphabetically</button>
+</body>
+</html>
